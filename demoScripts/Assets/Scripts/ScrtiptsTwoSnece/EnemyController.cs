@@ -28,6 +28,7 @@ public class EnemyController : MonoBehaviour
     {
         if (collision != null)
         {
+            UIController.CountKiilEnemy++;
             _isCollision = true;
             Destroy(gameObject);
             CinemachineShake.Instance.ShakeCamera(5f, 0.1f);
